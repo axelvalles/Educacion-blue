@@ -1,76 +1,119 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Educación</title>
-		<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="CSS/estilos.css" />
-    <link rel="shortcut icon" href="IMG/icono.png" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="images/icono.png" type="image/x-icon" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos2.css" />
+    <title>Educacion</title>
   </head>
-  <body>
-		<div class="container">
-			<header class="header">
-				<nav class="navbar">
-					<a href="index.html">Inicio</a>
-					<a href="#">Educación a distancia</a>
-					<a href="semi.html">Semi-presencial</a>
-				</nav>
-				<h2 class="titulo-final">&copy; Joan Vera 
-					<span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-emoji-sunglasses-fill" viewBox="0 0 16 16">
-						<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v.116A4.22 4.22 0 0 1 8 5c.35 0 .69.04 1 .116V5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-1.994-1.839A2.99 2.99 0 0 0 8 6c-.393 0-.74.064-1.006.161A2 2 0 0 1 5 8h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM4.969 9.75A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .866-.5z"/>
-					</svg></span>
-				</h2>
-			</header>
+  <body class="">
 
-				<section class="banner">
-					<h1>Educación a Distancia</h1>
-					<h2>Fundamental en Tiempos de Pandemia</h2>
-				</section>
-			
-			<main class="content-articles">
-				<section>
-					<h2 class="titulo">Educacion:</h2>
-					<div class="contenedor-educacion">
-						<img src="IMG/imagen1.png" class="imagen-educacion" />
-						<div class="contenido-textos">
-							<h3>1- ¿Que es la educacion a distancia?</h3>
-							<p>
-								La educación a distancia es una modalidad de estudio o proceso de
-								formación independiente mediada por diversas tecnologías, con la
-								finalidad de promover el aprendizaje sin limitaciones de
-								ubicación, ocupación o edad de los estudiantes. Es un estudio
-								autodirigido por el estudiante, quien debe planificar y organizar
-								su tiempo, material didáctico y guía tutorial para responder a las
-								exigencias del curso, carrera o especialización que sigue.
-							</p>
-						</div>
-					</div>
-				</section>
+    <div class="pb-5  bg-light">
+    <nav id="navbar" class="navbar fixed-top navbar-light bg-white shadow-lg">
+      <div class="container">
+        <a class="navbar-brand fs-2 blue" href="#"
+          >Mi Blog
+          <i
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="currentColor"
+              class="bi bi-stars"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"
+              /></svg></i
+        ></a>
+        <div class="nav">
+          <a class="link fs-4" href="#">Inicio</a>
+          <a class="link fs-4" href="#ventajas">Ventajas</a>
+          <a class="link fs-4" href="#desventajas">Desventajas</a>
+          <a class="link fs-4" href="#venezuela">Venezuela</a>
+          <a class="link fs-4" href="#caracteristicas">Caracteristicas</a>
+        </div>
+      </div>
+    </nav>
+  </div>
 
-				<section>
-					<h3>2- Ventajas</h3>
-					<div class="contenedor-lista-ventajas">
-						<ul>
-							<li>
-								Elimina las barreras geográficas, la población puede acceder a
-								este tipo de educación independientemente de donde resida.
-							</li>
-							<li>
-								Es accesible para personas adultas con estudios postergados.
-							</li>
-							<li>
-								Proporciona flexibilidad en el horario ya que no hay hora
+    <header class="bg-light py-5 mb-5">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-6 bannerLeft" id="bannerLeft">
+            <img
+              src="/images/undraw_online_resume_re_ru7s.svg"
+              alt=""
+              style="width: 100%"
+              class="ms-3"
+            />
+          </div>
+          <div class="col-6 bannerRight">
+            <h1 class="text-center me-3 mt-5 blue">Educación a Distancia</h1>
+            <h4 class="text-center me-3 blue">Fundamental en Tiempos de Pandemia</h4>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mb-5">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center mb-5">
+          <h3 class="text-center blue">¿Que es la educacion a distancia?</h3>
+          <div class="col-12 col-md-7">
+            <p class="text-center fw-bolder">
+              La educación a distancia es una modalidad de estudio o proceso de
+              formación independiente mediada por diversas tecnologías, con la
+              finalidad de promover el aprendizaje sin limitaciones de
+              ubicación, ocupación o edad de los estudiantes. Es un estudio
+              autodirigido por el estudiante, quien debe planificar y organizar
+              su tiempo, material didáctico y guía tutorial para responder a las
+              exigencias del curso, carrera o especialización que sigue.
+            </p>
+          </div>
+          <i id="ventajas"></i>
+        </div>
+
+        <div class="row bg-light py-5">
+          <h3 class="text-center mb-3 blue">Ventajas</h3>
+          <div class="col-6 ventajas-1">
+            <ul>
+              <li>Elimina las barreras geográficas, la población puede acceder a
+								este tipo de educación independientemente de donde resida.</li>
+              <li class="my-2">Es accesible para personas adultas con estudios postergados.</li>
+              <li>Proporciona flexibilidad en el horario ya que no hay hora
 								exacta para acceder a la información, lo cual facilita la
 								organización del tiempo personal del alumno, respetando la
-								vida familiar, social y laboral.
-							</li>
-							<li>
+								vida familiar, social y laboral.</li>
+              </ul>
+          </div>
+          <div class="col-6 ventajas-2">
+            <ul>
+              <li>
 								Reduce costos al evitar gastos de traslados o residencia en un
 								lugar diferente.
 							</li>
-							<li>
+							<li class="my-2">
 								Incorpora herramientas tecnológicas para el manejo de la
 								información, las cuales son necesarias para desempeñarse
 								profesionalmente en la sociedad en constante cambio, tales
@@ -82,19 +125,19 @@
 								responsabilidad, disciplina y compromiso para lograr ser
 								autónomo.
 							</li>
-						</ul>
-					</div>
-				</section>
+          </div>
+          <i id="desventajas"></i>
+        </div>
 
-				<section>
-					<h3>3- Desventajas</h3>
-					<div class="contenedor-lista-desventajas">
-						<ul>
-							<li>
+        <div class="row py-5">
+          <h3 class="text-center mb-3 blue">Desventajas</h3>
+          <div class="col-6 desventajas">
+            <ul>
+              <li>
 								Dificulta transmitir y conservar determinados contenidos
 								actitudinales para mejorar la socialización.
 							</li>
-							<li>
+							<li class="my-2">
 								Generalmente el cambio a un sistema de educación a distancia
 								exige al alumnado una adaptación específica: ha de aprender a
 								usar materiales didácticos específicos y aulas virtuales, a
@@ -103,83 +146,89 @@
 								tiempo de estudio para compaginar vida personal, laboral y
 								académica.
 							</li>
-							<li>
-								Se pierden igualmente otros objetivos del ámbito afectivo y
-								actitudinal, formación y cambio de actitudes de los alumnos
-								así como los del área psicomotriz que no atiendan a
-								capacidades que se expresen por escrito, se suelen lograr de
-								manera más efectiva mediante los contactos personales.
+              <li>
+								Ofrece limitado intercambio directo de experiencias que
+								proporciona la relación profesor-alumno y alumno-alumno.
 							</li>
-							<li>
+              </ul>
+          </div>
+          <div class="col-6 desventajas">
+            <ul>
+              <li>
 								Al eliminarse la interacción social en presencia la
 								comunicación se reduce a un solo canal y resulta menos
 								profunda, por lo que es posible que el alumno se aisle y
 								desmotive, ante ello, es necesaria una intervención activa del
 								profesor tutor.
 							</li>
-							<li>
+							<li class="my-2">
 								La diversificación y ampliación de la oferta educativa de
 								distintos cursos y niveles va en aumento aunque no se ha
 								logrado cubrir al 100 %.
 							</li>
-							<li>
-								Ofrece limitado intercambio directo de experiencias que
-								proporciona la relación profesor-alumno y alumno-alumno.
+              <li>
+								Se pierden igualmente otros objetivos del ámbito afectivo y
+								actitudinal, formación y cambio de actitudes de los alumnos
+								así como los del área psicomotriz que no atiendan a
+								capacidades que se expresen por escrito, se suelen lograr de
+								manera más efectiva mediante los contactos personales.
 							</li>
-						</ul>
-					</div>
-				</section>
+          </div>
+          <i id="venezuela"></i>
+        </div>
 
-				<section>
-					<h2 class="titulo">Educación en Venezuela</h2>
-					<p>
-						Esta medida tomó por sorpresa a colegios públicos y privados
-						de Venezuela, que debieron definir una estrategia de
-						contingencia de emergencia para acatar el decreto nacional,
-						sin perder su cronograma escolar.<br /> <br />
-						La rutina sigue para todos aunque la situación ha obligado a
-						adaptarse, tanto a los profesores como a los alumnos y también
-						a los padres, que han tenido que adaptar su propio trabajo o
-						teletrabajo a la formación de sus hijos intentando que el caos
-						no se adueñe del hogar. <br /><br />
-						Desde la llegada del covid-19 al país, escuelas y colegios se
-						vieron forzados a cerrar sus puertas. Los maestros y padres se
-						las ingeniaron para concluir un segundo lapso e iniciar el
-						tercero con mucha incertidumbre e improvisación a distancia.
-						Dos meses después, aún en pandemia, el panorama de este nuevo
-						año escolar 2020-2021 no es muy distinto al de hace seis
-						meses, incluso podría ser peor: la deficiencia en los
-						servicios básicos (electricidad e Internet), la falta de
-						recursos o dispositivos tecnológicos en los hogares, el
-						aumento de la deserción escolar y las deficiencias que muchos
-						estudiantes arrastran para este nuevo año suponen un gran reto
-						para el sistema educativo venezolano, en crisis desde hace
-						años.<br /><br />
-						Aunque este nuevo año escolar se iniciará de manera virtual,
-						aún no se sabe qué ocurrirá en unos meses. El pasado 21 de
-						agosto, Nicolás Maduro planeó un regreso a clases parcialmente
-						presencial a partir de octubre, propuesta que rechazaron tanto
-						educadores como padres debido a que los casos de contagios
-						diarios de covid-19 en el país no descienden, solo aumentan:
-						hasta la fecha hay 63.416. Dos días después informó en el
-						programa Aquí con Ernesto Villegas que se realizaría una
-						encuesta para conocer la opinión de los venezolanos sobre el
-						regreso a clases de manera presencial, y aclaró que se podría
-						hacer un ensayo para una dinámica mixta, que combinará las
-						clases presenciales con la educación a distancia.
-					</p>
-				</section>
+        <div class="row p-5 bg-light">
+          <div class="col">
+            <div class="row mb-3">
+              <div class="col-6">
+                <h3 class="blue text-center">Educación en Venezuela</h3>
+                <p>Esta medida tomó por sorpresa a colegios públicos y privados
+                  de Venezuela, que debieron definir una estrategia de
+                  contingencia de emergencia para acatar el decreto nacional,
+                  sin perder su cronograma escolar.</p>
+                <p>La rutina sigue para todos aunque la situación ha obligado a
+                  adaptarse, tanto a los profesores como a los alumnos y también
+                  a los padres, que han tenido que adaptar su propio trabajo o
+                  teletrabajo a la formación de sus hijos intentando que el caos
+                  no se adueñe del hogar.</p> 
+                  <p>Desde la llegada del covid-19 al país, escuelas y colegios se
+                    vieron forzados a cerrar sus puertas. Los maestros y padres se
+                    las ingeniaron para concluir un segundo lapso e iniciar el
+                    tercero con mucha incertidumbre e improvisación a distancia.</p>
+              </div>
 
-				<section>
-					<h2 class="titulo">Caracteristicas</h2>
+              <div class="col-6">
+                <img src="/images/undraw_education_f8ru.svg" alt="Educacion" style="width: 100%;" class="educacion">
+              </div>
+            </div>
+
+            <div class="row">
+              <p>	Dos meses después, aún en pandemia, el panorama de este nuevo
+                año escolar 2020-2021 no es muy distinto al de hace seis
+                meses, incluso podría ser peor: la deficiencia en los
+                servicios básicos (electricidad e Internet), la falta de
+                recursos o dispositivos tecnológicos en los hogares, el
+                aumento de la deserción escolar y las deficiencias que muchos
+                estudiantes arrastran para este nuevo año suponen un gran reto
+                para el sistema educativo venezolano, en crisis desde hace
+                años.</p>
+            </div>
+          </div>
+          <i id="caracteristicas"></i>
+        </div>
+
+        <div class="row d-flex justify-content-center py-5">
+          <div class="col-8">
+            <h2 class="blue text-center">Caracteristicas</h2>
 					<p>
 						La educación a distancia se caracteriza por la flexibilidad de
 						sus horarios, pues el mismo estudiante organiza su tiempo de
 						estudio, lo cual requiere cierto grado de autodisciplina. Esta
 						flexibilidad de horarios a veces está limitada en ciertos cursos
 						que exigen participación en línea en horarios o espacios
-						específicos. <br />
-						Otra característica de la educación a distancia, es el uso de
+						específicos.</p>
+
+						<p>Otra característica de la educación a distancia, es el uso de
 						las Tecnologías de la Información y la Comunicación (TIC) para
 						formar comunidades o redes de estudio donde los individuos
 						pueden interactuar,fomentando el uso educativo de las redes
@@ -191,15 +240,22 @@
 						de ser el protagonista, convirtiéndose en un facilitador del
 						proceso educativo y le cede el paso al estudiante, el cual debe
 						tener un compromiso firme con su propio proceso de formación.
-						<br />
 					</p>
-				</section>
-			</main>
-		</div>
-    <main>
+          </div>
+        </div>
 
-			<footer>
-				<h2 class="titulo-final">&copy; Joan Vera <small>2021 electiva 3</small></h2>
-			</footer>
+      </div>
+    </main>
+
+    <footer class="position-absolute py-2" style="width: 100%;">
+      <p class="text-center fw-bold text-light">Realizado por: Axel Valles 2021</p>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
