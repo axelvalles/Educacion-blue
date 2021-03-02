@@ -29,7 +29,7 @@
   <body class="">
 
     <div class="pb-5  bg-light">
-    <nav id="navbar" class="navbar fixed-top navbar-light bg-white shadow-lg">
+    <nav id="navbar" class="navbar fixed-top navbar-light bg-white shadow-lg navbar-expand-md ">
       <div class="container">
         <a class="navbar-brand fs-2 blue" href="#"
           >Mi Blog
@@ -46,12 +46,17 @@
                 d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"
               /></svg></i
         ></a>
-        <div class="nav">
-          <a class="link fs-4" href="#">Inicio</a>
-          <a class="link fs-4" href="#ventajas">Ventajas</a>
-          <a class="link fs-4" href="#desventajas">Desventajas</a>
-          <a class="link fs-4" href="#venezuela">Venezuela</a>
-          <a class="link fs-4" href="#caracteristicas">Caracteristicas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"">
+          <div class="nav navbar-nav ms-auto">
+            <a class="link fs-4" href="#">Inicio</a>
+            <a class="link fs-4" href="#ventajas">Ventajas</a>
+            <a class="link fs-4" href="#desventajas">Desventajas</a>
+            <a class="link fs-4" href="#venezuela">Venezuela</a>
+            <a class="link fs-4" href="#caracteristicas">Caracteristicas</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -60,7 +65,7 @@
     <header class="bg-light py-5 mb-5">
       <div class="container-fluid">
         <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-6 bannerLeft" id="bannerLeft">
+          <div class="col-9 bannerLeft" id="bannerLeft">
             <img
               src="images/undraw_online_resume_re_ru7s.svg"
               alt=""
@@ -68,7 +73,7 @@
               class="ms-3"
             />
           </div>
-          <div class="col-6 bannerRight">
+          <div class="col-12 bannerRight">
             <h1 class="text-center me-3 mt-5 blue">Educación a Distancia</h1>
             <h4 class="text-center me-3 blue">Fundamental en Tiempos de Pandemia</h4>
           </div>
@@ -96,7 +101,7 @@
 
         <div class="row bg-light py-5">
           <h3 class="text-center mb-3 blue">Ventajas</h3>
-          <div class="col-6 ventajas-1">
+          <div class="col-12 col-md-6 ventajas-1">
             <ul>
               <li>Elimina las barreras geográficas, la población puede acceder a
 								este tipo de educación independientemente de donde resida.</li>
@@ -107,7 +112,7 @@
 								vida familiar, social y laboral.</li>
               </ul>
           </div>
-          <div class="col-6 ventajas-2">
+          <div class="col-12 col-md-6 ventajas-2">
             <ul>
               <li>
 								Reduce costos al evitar gastos de traslados o residencia en un
@@ -131,7 +136,7 @@
 
         <div class="row py-5">
           <h3 class="text-center mb-3 blue">Desventajas</h3>
-          <div class="col-6 desventajas">
+          <div class="col-12 col-md-6 desventajas">
             <ul>
               <li>
 								Dificulta transmitir y conservar determinados contenidos
@@ -152,7 +157,7 @@
 							</li>
               </ul>
           </div>
-          <div class="col-6 desventajas">
+          <div class="col-12 col-md-6 desventajas">
             <ul>
               <li>
 								Al eliminarse la interacción social en presencia la
@@ -180,7 +185,7 @@
         <div class="row p-5 bg-light">
           <div class="col">
             <div class="row mb-3">
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <h3 class="blue text-center">Educación en Venezuela</h3>
                 <p>Esta medida tomó por sorpresa a colegios públicos y privados
                   de Venezuela, que debieron definir una estrategia de
@@ -197,21 +202,23 @@
                     tercero con mucha incertidumbre e improvisación a distancia.</p>
               </div>
 
-              <div class="col-6">
+              <div class="col-12 col-md-6 my-3 my-md-0">
                 <img src="images/undraw_education_f8ru.svg" alt="Educacion" style="width: 100%;" class="educacion">
               </div>
             </div>
 
             <div class="row">
-              <p>	Dos meses después, aún en pandemia, el panorama de este nuevo
-                año escolar 2020-2021 no es muy distinto al de hace seis
-                meses, incluso podría ser peor: la deficiencia en los
-                servicios básicos (electricidad e Internet), la falta de
-                recursos o dispositivos tecnológicos en los hogares, el
-                aumento de la deserción escolar y las deficiencias que muchos
-                estudiantes arrastran para este nuevo año suponen un gran reto
-                para el sistema educativo venezolano, en crisis desde hace
-                años.</p>
+              <div class="col">
+                <p>	Dos meses después, aún en pandemia, el panorama de este nuevo
+                  año escolar 2020-2021 no es muy distinto al de hace seis
+                  meses, incluso podría ser peor: la deficiencia en los
+                  servicios básicos (electricidad e Internet), la falta de
+                  recursos o dispositivos tecnológicos en los hogares, el
+                  aumento de la deserción escolar y las deficiencias que muchos
+                  estudiantes arrastran para este nuevo año suponen un gran reto
+                  para el sistema educativo venezolano, en crisis desde hace
+                  años.</p>
+              </div>
             </div>
           </div>
           <i id="caracteristicas"></i>
